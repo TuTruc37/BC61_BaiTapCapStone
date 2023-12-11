@@ -9,3 +9,41 @@ body {
   font-weight: 400;
   color: #707070;
 }
+.title{
+  color: #060606;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.title_span{
+  color: #ff6e65;
+}
+/* .number .number_title {
+  color: #060606;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.number .number_title span {
+  color: #ff6e65;
+} */
+.title::before,
+.title::after {
+  content: " ";
+  background-color: #707070;
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  right: 0;
+  margin: auto;
+}
+.title::before {
+  left: -20px;
+  bottom: -8px;
+}
+.title::after {
+  left: 20px;
+  bottom: -15px;
+}
