@@ -9,14 +9,14 @@ body {
   font-weight: 400;
   color: #707070;
 }
-.title{
+.title {
   color: #060606;
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;
   position: relative;
 }
-.title_span{
+.title_span {
   color: #ff6e65;
 }
 /* .number .number_title {
@@ -46,4 +46,102 @@ body {
 .title::after {
   left: 20px;
   bottom: -15px;
+}
+/* number */
+.number .number_content .number_item {
+  border-right: 1px solid #eee;
+}
+.number .number_content h3 {
+  font-size: 46px;
+  font-weight: 600;
+  color: #060606;
+}
+.number .number_content p {
+  color: #060606;
+}
+/* feedback */
+.feedback .feedback_items {
+  box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+  padding: 2rem;
+  border-radius: 4px;
+}
+.feedback .feedback_items i {
+  font-size: 22px;
+  color: #ff6e65;
+  line-height: 0.8;
+  display: inline-block;
+}
+.feedback .feedback_items .feedback_q {
+  text-indent: 5px;
+}
+.feedback .feedback_items .feedback_item {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 5px;
+  margin-top: 24px;
+  align-items: center;
+}
+.feedback .feedback_items .feedback_item .feedback_img {
+  margin-bottom: 22px;
+}
+.feedback .feedback_items .feedback_item .feedback_img img {
+  border-radius: 50%;
+}
+.feedback .feedback_items .feedback_item .feedback_text h5 {
+  font-weight: 600;
+  line-height: 16px;
+  color: #060606;
+}
+.feedback .feedback_items .feedback_item .feedback_text p {
+  font-size: 13px;
+}
+/* instructors */
+.instructors .instructors_items {
+  box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+  padding: 10px;
+  border-radius: 8px;
+}
+.instructors .instructors_items .instructors_item {
+  position: relative;
+  overflow: hidden;
+}
+.instructors .instructors_items .instructors_item img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.instructors .instructors_items .instructors_item .instructors_overlay {
+  position: absolute;
+  bottom: 0;
+  background: none;
+  padding: 20px 0;
+  width: 100%;
+  transition: all 0.5s;
+}
+.instructors .instructors_items:hover .instructors_overlay {
+  bottom: 100px;
+  background: rgb(8 8 8 / 29%);
+}
+.instructors .instructors_items .instructors_overlay .instructor_icon {
+  display: none;
+}
+.instructors .instructors_items:hover .instructor_icon {
+  display: inline-block;
+}
+.instructors .instructors_items .instructors_item .instructors_overlay i {
+  font-size: 14px;
+  line-height: 28px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  color: #0d369f;
+}
+.instructors .instructors_items .instructors_item .instructors_text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #060606;
+}
+.instructors .instructors_items .instructors_item .instructors_text p {
+  font-size: 13px;
+  margin: 0;
 }
