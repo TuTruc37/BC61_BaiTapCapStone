@@ -2,3 +2,21 @@
 /* education */
 /* group */
 /* join */
+.join .join_text h3{
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #060606;
+}
+.join .join_text ul{
+    list-style: none;
+    padding-left: 0;
+}
+.join .join_text i{
+margin-right: 8px;
+color: #ff6e65;
+}
+.join .join_img img{
+    border-radius: 8px;
+    width: 100%;
+}
