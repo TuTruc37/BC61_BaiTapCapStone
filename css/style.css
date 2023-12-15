@@ -41,7 +41,7 @@ body {
 .top_header {
   background-color: #0e369f;
   padding: 14px 15px 0 15px;
-  position:relative;
+  position: relative;
   /* z-index: 1031; */
 }
 .top_header .top_header_content {
@@ -80,41 +80,43 @@ body {
   color: #ff6e65;
 }
 /*header*/
-header{
-  display:grid;
+header {
+  display: grid;
   align-items: center;
-  height:90px;
+  height: 90px;
 }
-header .navbar{
-  position:relative;
-  background-color:white !important;
+header .navbar {
+  position: relative;
+  background-color: white !important;
   /* top:45px; */
 }
-header .navbar h1{
+header .navbar h1 {
   font-size: 26px;
   font-weight: 600;
-  color:#0d369f;
+  color: #0d369f;
   transition: all 0.5s;
 }
-header h1:hover .navbar-brand{
-  color:#ff6e65;
+header h1:hover .navbar-brand {
+  color: #ff6e65;
 }
-header .navbar-collapse{
-  display:flex;
+header .navbar-collapse {
+  display: flex;
   justify-content: flex-end;
 }
-header .dropdown-item{
+header .dropdown-item {
   text-transform: uppercase;
 }
-header .nav-link,header a.dropdown-item{
-  font-size:16px;
-  font-weight:600;
+header .nav-link,
+header a.dropdown-item {
+  font-size: 16px;
+  font-weight: 600;
 }
-header .nav-item:hover .nav-link, header a.dropdown-item:hover{
+header .nav-item:hover .nav-link,
+header a.dropdown-item:hover {
   background: none;
   color: #ff6e65 !important;
 }
-.active{
+.active {
   color: #ff6e65 !important;
 }
 /* number */
@@ -374,4 +376,31 @@ footer .footer_bottom a:hover {
   footer .footer_contact p {
     margin-bottom: 15px;
   }
+}
+/* back to top */
+.back_to_top {
+  position: fixed;
+  right: 15px;
+  bottom: 90px;
+  background-color: #0d369f;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.2s;
+  box-shadow: -4px 4px 24px -10px #0d369f;
+  opacity: 0;
+  visibility: hidden;
+}
+/* // back-to-top button visible */
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+/* // reduce button opacity if user keeps scrolling */
+.cd-top--fade-out {
+  visibility: visible;
+  opacity: 1;
 }

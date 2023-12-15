@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- font-awesome -->
@@ -37,127 +37,178 @@
   </head>
 
   <body>
-   <section class="main">
-
-   </section>
-   <footer class="position-relative mt-5 pt-5">
-    <div class="footer_header">
+    <style>
+      .main {
+        background-image: url(./img/error.jpg);
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+      .main::before {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          75deg,
+          rgb(16 16 16 / 62%) 10%,
+          rgb(230 2 100 / 0%)
+        );
+        z-index: -1;
+      }
+      .main .main_text h2 {
+        font-size: 160px;
+        line-height: 1;
+        font-weight: 500;
+      }
+      .main .main_text h3 {
+        font-size: 24px;
+        font-weight: 300;
+      }
+    </style>
+    <section class="main">
       <div class="container">
-        <div class="footer_form">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="footer_text">
-                <h2>Subscribe Us to join our Community</h2>
-                <p>Newsletter</p>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="footer_input">
-                <form>
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    name="email"
-                  />
-                  <button class="btn btn_input">Send</button>
-                </form>
-              </div>
-            </div>
+        <div class="main_text">
+          <h2>404</h2>
+          <h3>Oops! That page can’t be found.</h3>
+          <div class="main_content">
+            <form action="https://wp.w3layouts.com/studious/">
+              <input type="search" placeholder="Search your keywords.." />
+            </form>
           </div>
         </div>
-        <div class="footer_top">
-          <div class="row footer_margin">
-            <div class="col-lg-2 col-sm-6">
-              <div class="footer_item">
-                <h6>ARCHIVES</h6>
-                <ul>
-                  <li><i class="fa-solid fa-angles-right"></i>April 2021</li>
-                </ul>
+      </div>
+    </section>
+    <footer class="position-relative mt-5 pt-5">
+      <div class="footer_header">
+        <div class="container">
+          <div class="footer_form">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="footer_text">
+                  <h2>Subscribe Us to join our Community</h2>
+                  <p>Newsletter</p>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 ps-lg-5">
-              <div class="footer_item">
-                <h6>ARCHIVES</h6>
-                <ul>
-                  <li><i class="fa-solid fa-angles-right"></i>Business</li>
-                  <li><i class="fa-solid fa-angles-right"></i>Creative</li>
-                  <li><i class="fa-solid fa-angles-right"></i>Design</li>
-                  <li><i class="fa-solid fa-angles-right"></i>Food</li>
-                  <li><i class="fa-solid fa-angles-right"></i>Industry</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 footer_border">
-              <div class="footer_item">
-                <h6>CONTACT</h6>
-                <div class="footer_contact">
-                  <div class="contact_1">
-                    <i class="fa-regular fa-envelope"></i>
-                    <a href="mailto: info@example.com">info@example.com</a>
-                  </div>
-                  <div class="contact_2">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+44-000-888-999">+44-000-888-999</a>
-                  </div>
-                  <div class="contact_3">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>London, 235 Terry, 10001</p>
-                  </div>
+              <div class="col-lg-6">
+                <div class="footer_input">
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      name="email"
+                    />
+                    <button class="btn btn_input">Send</button>
+                  </form>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6 ps-lg-5">
-              <div class="footer_item">
-                <h6>ABOUT</h6>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit
-                  voluptatem accusantium doloremque laudantium, totam rem
-                  aperiam, eaque ipsa quae ab.
-                </p>
-                <div>
-                  <ul class="social d-flex">
-                    <li>
-                      <a href="https://www.facebook.com/w3layouts/"
-                        ><i class="fa-brands fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://in.linkedin.com/company/w3layouts"
-                        ><i class="fa-brands fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/W3layouts"
-                        ><i class="fa-brands fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://w3layouts.com/"
-                        ><i class="fa-brands fa-google-plus-g"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://w3layouts.com/"
-                        ><i class="fa-brands fa-github"></i
-                      ></a>
-                    </li>
+          </div>
+          <div class="footer_top">
+            <div class="row footer_margin">
+              <div class="col-lg-2 col-sm-6">
+                <div class="footer_item">
+                  <h6>ARCHIVES</h6>
+                  <ul>
+                    <li><i class="fa-solid fa-angles-right"></i>April 2021</li>
                   </ul>
                 </div>
               </div>
+              <div class="col-lg-3 col-sm-6 ps-lg-5">
+                <div class="footer_item">
+                  <h6>ARCHIVES</h6>
+                  <ul>
+                    <li><i class="fa-solid fa-angles-right"></i>Business</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Creative</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Design</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Food</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Industry</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 footer_border">
+                <div class="footer_item">
+                  <h6>CONTACT</h6>
+                  <div class="footer_contact">
+                    <div class="contact_1">
+                      <i class="fa-regular fa-envelope"></i>
+                      <a href="mailto: info@example.com">info@example.com</a>
+                    </div>
+                    <div class="contact_2">
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:+44-000-888-999">+44-000-888-999</a>
+                    </div>
+                    <div class="contact_3">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>London, 235 Terry, 10001</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ps-lg-5">
+                <div class="footer_item">
+                  <h6>ABOUT</h6>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab.
+                  </p>
+                  <div>
+                    <ul class="social d-flex">
+                      <li>
+                        <a href="https://www.facebook.com/w3layouts/"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://in.linkedin.com/company/w3layouts"
+                          ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/W3layouts"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://w3layouts.com/"
+                          ><i class="fa-brands fa-google-plus-g"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://w3layouts.com/"
+                          ><i class="fa-brands fa-github"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer_bottom text-center">
-      <div class="container">
-        <p>
-          © 2023 Studious. All Rights Reserved | WordPress Theme by
-          <a href="https://w3layouts.com/">W3Layouts.</a>
-        </p>
+      <div class="footer_bottom text-center">
+        <div class="container">
+          <p>
+            © 2023 Studious. All Rights Reserved | WordPress Theme by
+            <a href="https://w3layouts.com/">W3Layouts.</a>
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+    <!-- back to top -->
+    <a href="#" class="cd-top text-replace js-cd-top back_to_top"
+      ><i class="fa-solid fa-arrow-turn-up"></i
+    ></a>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -170,5 +221,8 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <!-- back to top js -->
+    <script src="./back-to-top-master/back-to-top-master/assets/js/main.js"></script>
+    <script src="./back-to-top-master/back-to-top-master/assets/js/util.js"></script>
   </body>
 </html>
