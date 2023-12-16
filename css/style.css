@@ -41,7 +41,7 @@ body {
 .top_header {
   background-color: #0e369f;
   padding: 14px 15px 0 15px;
-  position: relative;
+  /* position: relative; */
   /* z-index: 1031; */
 }
 .top_header .top_header_content {
