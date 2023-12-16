@@ -41,7 +41,7 @@
       .main {
         background-image: url(./img/error.jpg);
         background-repeat: repeat;
-        background-position: center;
+        background-position: bottom;
         background-size: cover;
         height: 100vh;
         position: relative;
@@ -49,6 +49,8 @@
         align-items: center;
         justify-content: center;
         color: #fff;
+        padding: 70px 0;
+        z-index: 1;
       }
       .main::before {
         position: absolute;
@@ -64,6 +66,9 @@
         );
         z-index: -1;
       }
+      .main .main_text {
+        max-width: 500px;
+      }
       .main .main_text h2 {
         font-size: 160px;
         line-height: 1;
@@ -73,16 +78,60 @@
         font-size: 24px;
         font-weight: 300;
       }
+      .main .main_content form {
+        position: relative;
+        background: #fff;
+        border-radius: 35px;
+      }
+      .main .main_content form input {
+        padding: 15px 58px 15px 20px;
+        border: 2px solid rgb(255 255 255 / 29%);
+        outline: none;
+        border-radius: 35px;
+        width: 100%;
+      }
+      .main .main_content .btn_error {
+        position: absolute;
+        color: #ff6e65;
+        border: none;
+        background: none;
+        line-height: 1;
+        padding: 20px;
+        right: 2%;
+      }
+      .main .main_return {
+        margin-top: 50px;
+        font-weight: 600;
+      }
+      .main .main_return a {
+        text-decoration: none;
+        color: #eee;
+      }
+      .main .main_return a:hover{
+        color: #ff6e65;
+
+      }
+      .main .main_return i {
+        margin-right: 8px;
+      }
     </style>
     <section class="main">
       <div class="container">
         <div class="main_text">
           <h2>404</h2>
-          <h3>Oops! That page can’t be found.</h3>
-          <div class="main_content">
-            <form action="https://wp.w3layouts.com/studious/">
+          <h3 class="mt-3 mb-5">Oops! That page can’t be found.</h3>
+          <div class="main_content mt-4">
+            <form>
               <input type="search" placeholder="Search your keywords.." />
+              <button class="btn btn_error">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </form>
+            <div class="main_return">
+              <a href="./index.html">
+                <i class="fa-solid fa-arrow-left"></i>Back to Home
+              </a>
+            </div>
           </div>
         </div>
       </div>
