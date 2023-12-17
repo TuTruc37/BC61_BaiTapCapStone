@@ -157,6 +157,31 @@ header a.dropdown-item:hover {
   text-decoration: none;
   color:white;
 }
+/* studious */
+
+.studious .studious-images span{
+  color:#0d369f;
+  border-radius: 50%;
+  background-color:#EAEBF6;
+  width:70px;
+  height:70px;
+  line-height: 70px;
+  font-size:30px;
+}
+.studious .studious-body .studious-info a{
+  text-decoration: none;
+  color:black;
+}
+.studious .studious-body .studious-info h3{
+  font-size:24px;
+  font-weight:600;
+}
+.studious .studious-body .studious-info .studious-text{
+  margin-top:15px;
+  line-height: 28px;
+  letter-spacing: .4px;
+  text-align:center;
+}
 
 /* number */
 .number .number_content .number_item {
