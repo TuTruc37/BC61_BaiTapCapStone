@@ -121,66 +121,66 @@ header a.dropdown-item:hover {
 }
 
 /* carousel */
-.carousel{
-  display:relative;
+.carousel {
+  display: relative;
 }
 /*support */
-.support{
+.support {
   position: relative;
   margin-top: -50px;
-  z-index:1000;
+  z-index: 1000;
 }
-.support .color-1{
+.support .color-1 {
   background-color: #037ef3;
 }
-.support .color-2{
+.support .color-2 {
   background-color: #ffc949;
 }
-.support .color-3{
+.support .color-3 {
   background-color: #ff4f81;
 }
-.support .color-4{
+.support .color-4 {
   background-color: #1ee697;
 }
-.support .area-box{
-  padding:50px 35px;
+.support .area-box {
+  padding: 50px 35px;
   border-radius: 8px;
   text-align: center;
 }
-.support .area-box i{
-  font-size:45px;
-  color:#fff;
+.support .area-box i {
+  font-size: 45px;
+  color: #fff;
 }
-.support .area-box h4 .title-head{
-  display:block;
-  margin-top:25px;
+.support .area-box h4 .title-head {
+  display: block;
+  margin-top: 25px;
   text-decoration: none;
-  color:white;
+  color: white;
 }
 /* studious */
 
-.studious .studious-images span{
-  color:#0d369f;
+.studious .studious-images span {
+  color: #0d369f;
   border-radius: 50%;
-  background-color:#EAEBF6;
-  width:70px;
-  height:70px;
+  background-color: #eaebf6;
+  width: 70px;
+  height: 70px;
   line-height: 70px;
-  font-size:30px;
+  font-size: 30px;
 }
-.studious .studious-body .studious-info a{
+.studious .studious-body .studious-info a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
-.studious .studious-body .studious-info h3{
-  font-size:24px;
-  font-weight:600;
+.studious .studious-body .studious-info h3 {
+  font-size: 24px;
+  font-weight: 600;
 }
-.studious .studious-body .studious-info .studious-text{
-  margin-top:15px;
+.studious .studious-body .studious-info .studious-text {
+  margin-top: 15px;
   line-height: 28px;
-  letter-spacing: .4px;
-  text-align:center;
+  letter-spacing: 0.4px;
+  text-align: center;
 }
 
 /* number */
