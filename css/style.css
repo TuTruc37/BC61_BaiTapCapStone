@@ -119,6 +119,45 @@ header a.dropdown-item:hover {
 .active {
   color: #ff6e65 !important;
 }
+
+/* carousel */
+.carousel{
+  display:relative;
+}
+/*support */
+.support{
+  position: relative;
+  margin-top: -50px;
+  z-index:1000;
+}
+.support .color-1{
+  background-color: #037ef3;
+}
+.support .color-2{
+  background-color: #ffc949;
+}
+.support .color-3{
+  background-color: #ff4f81;
+}
+.support .color-4{
+  background-color: #1ee697;
+}
+.support .area-box{
+  padding:50px 35px;
+  border-radius: 8px;
+  text-align: center;
+}
+.support .area-box i{
+  font-size:45px;
+  color:#fff;
+}
+.support .area-box h4 .title-head{
+  display:block;
+  margin-top:25px;
+  text-decoration: none;
+  color:white;
+}
+
 /* number */
 .number .number_content .number_item {
   border-right: 1px solid #eee;
