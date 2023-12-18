@@ -33,6 +33,30 @@
 
     <!-- link css style -->
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .question .question_mxw {
+        max-width: 1000px;
+        margin: auto;
+      }
+      .question .question_content img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .question .question_content .question_input input,
+      .question .question_content .question_textarea textarea {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 16px;
+        font-size: 15px;
+        border: 1px solid #eee;
+        outline: none;
+        border-radius: 5px;
+      }
+      .question .question_content .question_input input:focus,
+      .question .question_content .question_textarea textarea:focus {
+        border: 1px solid #ff6e65;
+      }
+    </style>
   </head>
 
   <body>
@@ -109,7 +133,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./about_us.html">ABOUT US</a>
@@ -132,7 +161,11 @@
                     >
                   </li>
                   <!-- <li><hr class="dropdown-divider"></li> -->
-                  <li><a class="dropdown-item" href="./landing_page.html">landing page</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./landing_page.html"
+                      >landing page</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="#">elements page</a></li>
                 </ul>
               </li>
@@ -161,7 +194,7 @@
     <section class="service"></section>
     <section class="number py-5">
       <div class="container py-5">
-        <div class="number_title text-center mb-lg-5">
+        <div class="title-heading text-center mb-lg-5">
           <h3 class="title">
             Strength in <span class="title_span">Numbers</span>
           </h3>
@@ -202,7 +235,7 @@
     </section>
     <section class="feedback py-5">
       <div class="container py-5">
-        <div class="feedback_title text-center mb-lg-5">
+        <div class="title-heading text-center mb-lg-5">
           <h3 class="title">
             Student Community <span class="title_span">Feedback</span>
           </h3>
@@ -272,7 +305,7 @@
     </section>
     <section class="instructors py-5">
       <div class="container py-5">
-        <div class="instructors_title text-center pb-sm-5">
+        <div class="title-heading text-center pb-sm-5">
           <h3 class="title">
             World Class
             <span class="title_span">Instructors</span>
@@ -392,150 +425,164 @@
         </div>
       </div>
     </section>
-   <section class="map"></section>
-   <section class="question"></section>
-   <footer class="position-relative mt-5 pt-5">
-    <div class="footer_header">
-      <div class="container">
-        <div class="footer_form">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="footer_text">
-                <h2>Subscribe Us to join our Community</h2>
-                <p>Newsletter</p>
+    <section class="map"></section>
+    <section class="question py-5">
+      <div class="container pb-5">
+        <div class="question_mxw">
+          <div class="title-heading text-center pb-5">
+            <h3 class="title">
+              We will Answer all your <span class="title_span">Questions</span>
+            </h3>
+          </div>
+          <div class="question_content">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-5">
+                <img src="./img/contact.jpg" alt="" />
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="footer_input">
+              <div class="col-lg-7 ps-lg-4 mt-4 mt-lg-0">
                 <form>
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    name="email"
-                  />
-                  <button class="btn btn_input">Send</button>
+                  <div class="question_input">
+                    <input type="text" placeholder="Your Name*" required />
+                    <input type="email" placeholder="Your Email*" required />
+                    <input type="text" placeholder="Subject*" required />
+                  </div>
+                  <div class="question_textarea">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="5"
+                      placeholder="Type your message here*"
+                      required
+                    ></textarea>
+                  </div>
+                  <button class="btn btn_contact">Send Message</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer_top">
-          <div class="row footer_margin">
-            <div class="col-lg-2 col-sm-6">
-              <div class="footer_item">
-                <h6>ARCHIVES</h6>
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>April 2021</a
-                    >
-                  </li>
-                </ul>
+      </div>
+    </section>
+    <footer class="position-relative mt-5 pt-5">
+      <div class="footer_header">
+        <div class="container">
+          <div class="footer_form">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="footer_text">
+                  <h2>Subscribe Us to join our Community</h2>
+                  <p>Newsletter</p>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 ps-lg-5">
-              <div class="footer_item">
-                <h6>ARCHIVES</h6>
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Business</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Creative</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Design</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Food</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Industry</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 footer_border">
-              <div class="footer_item">
-                <h6>CONTACT</h6>
-                <div class="footer_contact">
-                  <div class="contact_1">
-                    <i class="fa-regular fa-envelope"></i>
-                    <a href="mailto: info@example.com">info@example.com</a>
-                  </div>
-                  <div class="contact_2">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+44-000-888-999">+44-000-888-999</a>
-                  </div>
-                  <div class="contact_3">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>London, 235 Terry, 10001</p>
-                  </div>
+              <div class="col-lg-6">
+                <div class="footer_input">
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      name="email"
+                    />
+                    <button class="btn btn_input">Send</button>
+                  </form>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6 ps-lg-5">
-              <div class="footer_item">
-                <h6>ABOUT</h6>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit
-                  voluptatem accusantium doloremque laudantium, totam rem
-                  aperiam, eaque ipsa quae ab.
-                </p>
-                <div>
-                  <ul class="social d-flex">
-                    <li>
-                      <a href="https://www.facebook.com/w3layouts/"
-                        ><i class="fa-brands fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://in.linkedin.com/company/w3layouts"
-                        ><i class="fa-brands fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/W3layouts"
-                        ><i class="fa-brands fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://w3layouts.com/"
-                        ><i class="fa-brands fa-google-plus-g"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://w3layouts.com/"
-                        ><i class="fa-brands fa-github"></i
-                      ></a>
-                    </li>
+          </div>
+          <div class="footer_top">
+            <div class="row footer_margin">
+              <div class="col-lg-2 col-sm-6">
+                <div class="footer_item mt-sm-2">
+                  <h6>ARCHIVES</h6>
+                  <ul>
+                    <li><i class="fa-solid fa-angles-right"></i>April 2021</li>
                   </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 ps-lg-5">
+                <div class="footer_item">
+                  <h6>CATEGORIES
+                  </h6>
+                  <ul>
+                    <li><i class="fa-solid fa-angles-right"></i>Business</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Creative</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Design</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Food</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Industry</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 footer_border">
+                <div class="footer_item">
+                  <h6>CONTACT</h6>
+                  <div class="footer_contact">
+                    <div class="contact_1">
+                      <i class="fa-regular fa-envelope"></i>
+                      <a href="mailto: info@example.com">info@example.com</a>
+                    </div>
+                    <div class="contact_2">
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:+44-000-888-999">+44-000-888-999</a>
+                    </div>
+                    <div class="contact_3">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>London, 235 Terry, 10001</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ps-lg-5">
+                <div class="footer_item">
+                  <h6>ABOUT</h6>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab.
+                  </p>
+                  <div>
+                    <ul class="social d-flex">
+                      <li>
+                        <a href="https://www.facebook.com/w3layouts/"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://in.linkedin.com/company/w3layouts"
+                          ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/W3layouts"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://w3layouts.com/"
+                          ><i class="fa-brands fa-google-plus-g"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://w3layouts.com/"
+                          ><i class="fa-brands fa-github"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer_bottom text-center">
-      <div class="container">
-        <p>
-          © 2023 Studious. All Rights Reserved | WordPress Theme by
-          <a href="https://w3layouts.com/">W3Layouts.</a>
-        </p>
+      <div class="footer_bottom text-center">
+        <div class="container">
+          <p>
+            © 2023 Studious. All Rights Reserved | WordPress Theme by
+            <a href="https://w3layouts.com/">W3Layouts.</a>
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
     <!-- back to top -->
     <a href="#" class="cd-top text-replace js-cd-top back_to_top"
       ><i class="fa-solid fa-arrow-turn-up"></i
