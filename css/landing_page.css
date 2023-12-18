@@ -1,0 +1,22 @@
+.question .question_mxw {
+  max-width: 1000px;
+  margin: auto;
+}
+.question .question_content img {
+  width: 100%;
+  border-radius: 8px;
+}
+.question .question_content .question_input input,
+.question .question_content .question_textarea textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  border: 1px solid #eee;
+  outline: none;
+  border-radius: 5px;
+}
+.question .question_content .question_input input:focus,
+.question .question_content .question_textarea textarea:focus {
+  border: 1px solid #ff6e65;
+}

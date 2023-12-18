@@ -212,6 +212,7 @@ header a.dropdown-item:hover {
   color: #060606;
 }
 /* feedback */
+
 .feedback .feedback_items {
   box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
   padding: 2rem;
@@ -225,6 +226,8 @@ header a.dropdown-item:hover {
 }
 .feedback .feedback_items .feedback_q {
   text-indent: 5px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
 }
 .feedback .feedback_items .feedback_item {
   display: grid;
