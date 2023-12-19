@@ -182,7 +182,44 @@ header a.dropdown-item:hover {
   letter-spacing: .4px;
   text-align:center;
 }
-
+/* service */
+.row{
+  margin:0 -15px;
+}
+.service{
+  background-image: url(../img/bg3.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.service .right_service .bg_item{
+  background-color:white;
+  padding:30px 74px 30px 30px;
+  border-radius: 8px;
+}
+.service .right_service .icon{
+  margin-right:1em;
+}
+.service .right_service .icon i{
+  color:#0d369f;
+  font-size:28px;
+  background-color: #EAEBF6;
+  width:65px;
+  height:65px;
+  border-radius: 50%;
+  line-height: 65px;
+  text-align: center;
+}
+.service .right_service h5{
+  line-height: 30px;
+  color:#060606;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.service .right_service p{
+  line-height: 28px;
+  letter-spacing: .4px;
+}
 /* number */
 .number .number_content .number_item {
   border-right: 1px solid #eee;
