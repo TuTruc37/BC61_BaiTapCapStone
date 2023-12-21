@@ -442,6 +442,7 @@ footer .footer_bottom a:hover {
     margin: 0 2em;
     top: -80px;
   }
+  
 }
 @media screen and (max-width: 575px) {
   footer .footer_contact p {
