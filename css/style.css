@@ -39,6 +39,7 @@ body {
 }
 /* top_header */
 .top_header {
+  display: block;
   background-color: #0e369f;
   padding: 14px 15px 0 15px;
   /* position: relative; */
@@ -84,9 +85,10 @@ header {
   display: grid;
   align-items: center;
   height: 90px;
+  background-color: white !important;
 }
 header .navbar {
-  position: relative;
+  /* position: relative; */
   background-color: white !important;
   /* top:45px; */
 }
