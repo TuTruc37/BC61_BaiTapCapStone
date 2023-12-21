@@ -121,7 +121,27 @@ header a.dropdown-item:hover {
 .active {
   color: #ff6e65 !important;
 }
-
+header form{
+  position:relative;
+}
+header form .search_btn{
+  position:absolute;
+  right: 10px;
+  top:5px;
+}
+header form .form-control{
+  font-size: 15px;
+  color:#060606;
+  border: none;
+  background: transparent;
+  padding: 10px 35px 10px 20px;
+  width: 100%;
+  border-radius: 30px;
+  border: 2px solid #eee;
+}
+header form .search_btn:hover{
+  color:#ff6e65
+}
 /* carousel */
 .carousel{
   display:relative;
