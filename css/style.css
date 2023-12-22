@@ -120,6 +120,7 @@ header a.dropdown-item:hover {
 }
 .active {
   color: #ff6e65 !important;
+  background-color: white !important;
 }
 header form{
   position:relative;
