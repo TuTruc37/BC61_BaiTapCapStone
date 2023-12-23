@@ -1,0 +1,35 @@
+.banner{
+    background-image: url(../img/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    background-position: center;
+}
+.banner_content{
+    margin:0 auto;
+    padding: 120px 15px 0 15px;
+}
+.banner_content h4{
+    padding-left: 2rem;
+}
+.banner_content .font-weight-bold{
+    font-weight: 700!important;
+}
+.banner_content .banner_linked{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #d4d4d4;
+    text-align: center;
+}
+.banner_content .banner_linked a{
+    text-decoration: none;
+    color:white;
+    opacity: .8;
+    transition: all .8s;
+}
+.banner_content .banner_linked a:hover{
+    opacity: 1;
+}

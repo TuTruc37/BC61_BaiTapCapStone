@@ -118,9 +118,13 @@ header a.dropdown-item:hover {
   background: none;
   color: #ff6e65 !important;
 }
-.active {
+.dropdown-menu .active {
   color: #ff6e65 !important;
   background-color: white !important;
+}
+.active {
+  color: #ff6e65 !important;
+  /* background-color: white !important; */
 }
 header form{
   position:relative;
