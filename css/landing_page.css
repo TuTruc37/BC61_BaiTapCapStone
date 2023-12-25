@@ -1,22 +1,63 @@
+/* map */
+.map .contact-left .contact-title{
+    font-weight: 700;
+    color: #060606;
+}
+.map .contact-left .contact-details .icon-contact-left{
+    margin-right: 1rem !important;
+    line-height: 1.5rem;
+}
+.map .contact-left .contact-details .icon-contact-left span{
+    color:#ff6e65;
+}
+
+.map .contact-details .content-contact-right h6{
+    font-size:18px;
+    color:#060606;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+a{
+    text-decoration: none;
+}
+.map .contact-left .contact-details .content-contact-right a{
+    color:#707070;
+    transition: all .3s ease;
+}
+.map .contact-left .contact-details .content-contact-right p:hover a{
+    color:#ff6e65
+}
+.map .contact-left .contact-details .content-contact-right p{
+    line-height: 28px;
+    letter-spacing:.4px;
+    margin-bottom: 0px;
+}
+.map-iframe iframe{
+    max-height: 100%;
+    border: 10px solid #fff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 6%);
+}
+/* question */
 .question .question_mxw {
-  max-width: 1000px;
-  margin: auto;
-}
-.question .question_content img {
-  width: 100%;
-  border-radius: 8px;
-}
-.question .question_content .question_input input,
-.question .question_content .question_textarea textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 16px;
-  font-size: 15px;
-  border: 1px solid #eee;
-  outline: none;
-  border-radius: 5px;
-}
-.question .question_content .question_input input:focus,
-.question .question_content .question_textarea textarea:focus {
-  border: 1px solid #ff6e65;
-}
+    max-width: 1000px;
+    margin: auto;
+  }
+  .question .question_content img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .question .question_content .question_input input,
+  .question .question_content .question_textarea textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    border: 1px solid #eee;
+    outline: none;
+    border-radius: 5px;
+  }
+  .question .question_content .question_input input:focus,
+  .question .question_content .question_textarea textarea:focus {
+    border: 1px solid #ff6e65;
+  }

@@ -1,0 +1,75 @@
+.main {
+    background-image: url(../img/error.jpg);
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 70px 0;
+    z-index: 1;
+  }
+  .main::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      75deg,
+      rgb(16 16 16 / 62%) 10%,
+      rgb(230 2 100 / 0%)
+    );
+    z-index: -1;
+  }
+  .main .main_text {
+    max-width: 500px;
+  }
+  .main .main_text h2 {
+    font-size: 160px;
+    line-height: 1;
+    font-weight: 500;
+  }
+  .main .main_text h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .main .main_content form {
+    position: relative;
+    background: #fff;
+    border-radius: 35px;
+  }
+  .main .main_content form input {
+    padding: 15px 58px 15px 20px;
+    border: 2px solid rgb(255 255 255 / 29%);
+    outline: none;
+    border-radius: 35px;
+    width: 100%;
+  }
+  .main .main_content .btn_error {
+    position: absolute;
+    color: #ff6e65;
+    border: none;
+    background: none;
+    line-height: 1;
+    padding: 20px;
+    right: 2%;
+  }
+  .main .main_return {
+    margin-top: 50px;
+    font-weight: 600;
+  }
+  .main .main_return a {
+    text-decoration: none;
+    color: #eee;
+  }
+  .main .main_return a:hover {
+    color: #ff6e65;
+  }
+  .main .main_return i {
+    margin-right: 8px;
+  }
