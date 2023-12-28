@@ -72,9 +72,10 @@
       </div>
     </div>
   </section>
-  <header id="site-banner" class="main-header sticky-top">
+  <header id="site-header" class="main-header sticky-top">
     <!-- what the hell -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
+      <!-- bg-body-tertiary -->
       <div class="container-fluid">
         <h1>
           <a class="navbar-brand" href="#">
@@ -83,15 +84,15 @@
         </h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">HOME</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./about_us.html">ABOUT US</a>
+              <a class="nav-link" href="./about_us.html">ABOUT US</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -112,10 +113,12 @@
               <a class="nav-link" aria-disabled="true">CONTACT</a>
             </li>
           </ul>
+          <ul class="navbar-nav nav-item-last">
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Enter keyword" aria-label="Search" />
             <button type="submit" class="btn search_btn"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
+          </ul>
         </div>
       </div>
     </nav>
@@ -229,7 +232,7 @@
   </section>
   <section class="instructors py-5 mxwidth">
     <div class="container py-5">
-      <div class="instructors_title text-center pb-sm-5">
+      <div class="title-heading text-center pb-sm-5">
         <h3 class="title">
           Who Makes the Magic Happen?
           <span class="title_span">Know About Them</span>
@@ -671,7 +674,29 @@
         mainClass: "my-mfp-zoom-in"
       });
     });
+    // script when scroll navbar
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 100){
+            $(".navbar-expand-lg").css({"background-color":"#fff"});   
+        }
+        else{
+            $(".navbar-expand-lg").css({"background-color":"transparent"});
+        }
 
+    })
+    });
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 100){
+            $(".main-header").css({"background-color":"#fff"});   
+        }
+        else{
+            $(".main-header").css({"background-color":"transparent"});
+        }
+
+    })
+    })
     // script about dark mode
   </script>
   <script src="./back-to-top-master/back-to-top-master/assets/js/main.js"></script>

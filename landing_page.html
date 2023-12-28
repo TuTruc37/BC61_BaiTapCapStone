@@ -81,7 +81,8 @@
   </section>
   <header id="site-header" class="main-header sticky-top">
     <!-- what the hell -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
+      <!-- bg-body-tertiary -->
       <div class="container-fluid">
         <h1>
           <a class="navbar-brand" href="#">
@@ -90,18 +91,18 @@
         </h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">HOME</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./about_us.html">ABOUT US</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 PAGES
               </a>
@@ -111,7 +112,7 @@
                   <a class="dropdown-item" href="./page_not_found.html">404 page</a>
                 </li>
                 <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item active" href="./landing_page.html">landing page</a></li>
+                <li><a class="dropdown-item" href="./landing_page.html">landing page</a></li>
                 <li><a class="dropdown-item" href="#">elements page</a></li>
               </ul>
             </li>
@@ -119,10 +120,12 @@
               <a class="nav-link" aria-disabled="true">CONTACT</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Enter keyword" aria-label="Search" />
-            <button type="submit" class="btn search_btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </form>
+          <ul class="navbar-nav nav-item-last">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Enter keyword" aria-label="Search" />
+              <button type="submit" class="btn search_btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+          </ul>
         </div>
       </div>
     </nav>
@@ -130,8 +133,8 @@
   <section class="carousel">
     <div class="owl-carousel owl-theme">
       <div class="carousel_item view_banner">
-        <div class="carousel_bg ">
-          <img src="./img/banner2.jpg" alt="" banner2.jpg>
+        <div class="carousel_bg carousel_bg_1">
+          <!-- <img src="./img/banner2.jpg" alt="" banner2.jpg> -->
         </div>
         <div class="carousel_content">
           <h5>
@@ -141,8 +144,8 @@
         </div>
       </div>
       <div class="carousel_item view_banner">
-        <div class="carousel_bg">
-          <img src="./img/banner3.jpg" alt="" banner3.jpg>
+        <div class="carousel_bg carousel_bg_2">
+          <!-- <img src="./img/banner3.jpg" alt="" banner3.jpg> -->
         </div>
         <div class="carousel_content">
           <h5>
@@ -586,9 +589,11 @@
           </div>
           <div class="col-md-7 mt-md-0 mt-4">
             <div class="map-iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl" width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
+                width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
@@ -638,11 +643,7 @@
             <div class="col-lg-6">
               <div class="footer_input">
                 <form>
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    name="email"
-                  />
+                  <input type="text" placeholder="Enter your email" name="email" />
                   <button class="btn btn_input">Send</button>
                 </form>
               </div>
@@ -656,9 +657,7 @@
                 <h6>ARCHIVES</h6>
                 <ul>
                   <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>April 2021</a
-                    >
+                    <a href="#"><i class="fa-solid fa-angles-right"></i>April 2021</a>
                   </li>
                 </ul>
               </div>
@@ -668,29 +667,19 @@
                 <h6>CATEGORIES</h6>
                 <ul>
                   <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Business</a
-                    >
+                    <a href="#"><i class="fa-solid fa-angles-right"></i>Business</a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Creative</a
-                    >
+                    <a href="#"><i class="fa-solid fa-angles-right"></i>Creative</a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Design</a
-                    >
+                    <a href="#"><i class="fa-solid fa-angles-right"></i>Design</a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Food</a
-                    >
+                    <a href="#"><i class="fa-solid fa-angles-right"></i>Food</a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-angles-right"></i>Industry</a
-                    >
+                    <a href="#"><i class="fa-solid fa-angles-right"></i>Industry</a>
                   </li>
                 </ul>
               </div>
@@ -734,9 +723,7 @@
                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#"
-                        ><i class="fa-brands fa-google-plus-g"></i
-                      ></a>
+                      <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
                     </li>
                     <li>
                       <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -787,6 +774,29 @@
       delay: 10,
     });
     // script about dark mode
+    //script when scroll navbar
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+          $(".navbar-expand-lg").css({ "background-color": "#fff" });
+        }
+        else {
+          $(".navbar-expand-lg").css({ "background-color": "transparent" });
+        }
+
+      })
+    });
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+          $(".main-header").css({ "background-color": "#fff" });
+        }
+        else {
+          $(".main-header").css({ "background-color": "transparent" });
+        }
+
+      })
+    })
     // carousel
     $('.owl-carousel').owlCarousel({
       autoHeight: true,
