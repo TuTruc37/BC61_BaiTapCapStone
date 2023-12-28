@@ -9,6 +9,10 @@ body {
   font-weight: 400;
   color: #707070;
 }
+.mxwidth{
+  max-width: 1200px;
+  margin: auto;
+}
 .title-heading {
   max-width: 700px;
   margin: auto;
@@ -347,6 +351,7 @@ header form .search_btn:hover{
 }
 .feedback .feedback_items .feedback_q {
   text-indent: 5px;
+  font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.4px;
 }
