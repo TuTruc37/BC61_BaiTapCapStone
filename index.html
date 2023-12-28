@@ -79,7 +79,8 @@
   </section>
   <header id="site-header" class="main-header sticky-top">
     <!-- what the hell -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
+      <!-- bg-body-tertiary -->
       <div class="container-fluid">
         <h1>
           <a class="navbar-brand" href="#">
@@ -88,7 +89,7 @@
         </h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
@@ -117,10 +118,12 @@
               <a class="nav-link" aria-disabled="true">CONTACT</a>
             </li>
           </ul>
+          <ul class="navbar-nav nav-item-last">
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Enter keyword" aria-label="Search" />
             <button type="submit" class="btn search_btn"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
+          </ul>
         </div>
       </div>
     </nav>
@@ -128,8 +131,8 @@
   <section class="carousel">
     <div class="owl-carousel owl-theme">
       <div class="carousel_item view_banner">
-        <div class="carousel_bg ">
-          <img src="./img/banner2.jpg" alt="" banner2.jpg>
+        <div class="carousel_bg carousel_bg_1">
+          <!-- <img src="./img/banner2.jpg" alt="" banner2.jpg> -->
         </div>
         <div class="carousel_content">
           <h5>
@@ -139,8 +142,8 @@
         </div>
       </div>
       <div class="carousel_item view_banner">
-        <div class="carousel_bg">
-          <img src="./img/banner3.jpg" alt="" banner3.jpg>
+        <div class="carousel_bg carousel_bg_2">
+          <!-- <img src="./img/banner3.jpg" alt="" banner3.jpg> -->
         </div>
         <div class="carousel_content">
           <h5>
@@ -706,6 +709,29 @@
       delay: 10,
     });
     // script about dark mode
+    //script when scroll navbar
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 100){
+            $(".navbar-expand-lg").css({"background-color":"#fff"});   
+        }
+        else{
+            $(".navbar-expand-lg").css({"background-color":"transparent"});
+        }
+
+    })
+    });
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 100){
+            $(".main-header").css({"background-color":"#fff"});   
+        }
+        else{
+            $(".main-header").css({"background-color":"transparent"});
+        }
+
+    })
+    })
     // script about owl-carousel
     $('.owl-carousel').owlCarousel({
       autoHeight:true,
