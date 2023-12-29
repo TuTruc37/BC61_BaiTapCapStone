@@ -311,6 +311,11 @@ header .navbar-nav .dropdown .active::after{
   margin-top: 25px;
   text-decoration: none;
   color: white;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.support .area-box h4 .title-head:hover{
+  color:#060606;
 }
 /* studious */
 
@@ -330,6 +335,9 @@ header .navbar-nav .dropdown .active::after{
 .studious .studious-body .studious-info h3 {
   font-size: 24px;
   font-weight: 600;
+}
+.studious .studious-body .studious-info h3:hover{
+  color: #ef6c63;
 }
 .studious .studious-body .studious-info .studious-text {
   margin-top: 15px;
