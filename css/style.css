@@ -186,9 +186,15 @@ header .navbar-nav a {
 header .nav-item {
   cursor: pointer;
 }
-header .navbar-brand {
+header .navbar-brand{
   color: #0d369f !important; 
   font-size: 26px;
+}
+header h1 .navbar-brand{
+  transition: all 0.3s ease;
+}
+header h1:hover .navbar-brand{
+  color: #ef6c63 !important; 
 }
 header .nav-item-last i{
   color:#0d369f;
@@ -766,5 +772,10 @@ footer .footer_bottom a:hover {
   }
   .service .content_service .col-md-6 .bg_item{
     padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 1200px){
+  header h1:hover .navbar-brand{
+    color: #0d369f !important; 
   }
 }
