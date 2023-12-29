@@ -173,7 +173,7 @@ header form .form-control {
   border-radius: 30px;
   border: 2px solid #eee;
 }
-header form .search_btn:hover {
+header form .search_btn:hover i{
   color: #ff6e65;
 }
 header .form-control:focus {
@@ -188,6 +188,18 @@ header .nav-item {
 }
 header .navbar-brand {
   color: #0d369f;
+}
+header .nav-item-last i{
+  color:#0d369f;
+}
+header .navbar-nav .nav-item{
+  padding:0 10px;
+}
+header .navbar-nav .dropdown .dropdown-toggle::after{
+  color: #060606;
+}
+header .navbar-nav .dropdown .active::after{
+  color: #ff6e65 !important;
 }
 /* carousel */
 .carousel {
@@ -705,10 +717,18 @@ footer .footer_bottom a:hover {
   header .navbar-nav .nav-link {
     text-align: center;
   }
+  header .navbar-nav .nav-item:hover .nav-link{
+    color:#0d369f;
+  }
+  .active{
+      color: #0d369f !important;
+  }
+  header .navbar-nav .dropdown .active::after{
+    color: #0d369f !important;
+  }
   .main-header {
     scroll-behavior: smooth;
   }
-
   /* carousel */
   .carousel .carousel_content h5 {
     font-size: 45px !important;
@@ -717,5 +737,27 @@ footer .footer_bottom a:hover {
   .carousel .carousel_content {
     left: 30px !important;
     top: 310px !important;
+  }
+}
+@media only screen and (max-width: 480px){
+  header .navbar .navbar-brand{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 380px){
+  .carousel .carousel_content{
+      top:210px !important;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1200px) { 
+  /* STYLES HERE */
+  .support .support_content .px-lg-2{
+    margin-bottom: 30px;
+  }
+  .support .support_content .area-box{
+    height:100%;
+  }
+  .service .content_service .col-md-6 .bg_item{
+    padding-right: 20px;
   }
 }
