@@ -187,7 +187,8 @@ header .nav-item {
   cursor: pointer;
 }
 header .navbar-brand {
-  color: #0d369f;
+  color: #0d369f !important; 
+  font-size: 26px;
 }
 header .nav-item-last i{
   color:#0d369f;
@@ -670,6 +671,9 @@ footer .footer_bottom a:hover {
     display: none;
   }
   /* header */
+  header .navbar-brand{
+    color: #0d369f !important;
+  }
   header {
     background-color: transparent;
   }
@@ -751,6 +755,9 @@ footer .footer_bottom a:hover {
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1200px) { 
   /* STYLES HERE */
+  header .navbar-brand{
+    color: #0d369f !important;
+  }
   .support .support_content .px-lg-2{
     margin-bottom: 30px;
   }
