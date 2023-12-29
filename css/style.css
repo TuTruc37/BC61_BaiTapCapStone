@@ -778,4 +778,7 @@ footer .footer_bottom a:hover {
   header h1:hover .navbar-brand{
     color: #0d369f !important; 
   }
+  .back_to_top{
+    z-index: 1031;
+  }
 }
